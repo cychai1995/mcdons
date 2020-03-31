@@ -71,4 +71,8 @@ python descriptor_evaluation configs/mcdon.yaml
     ``````
     YOUR_PATH_CHECKPOINT/progress/mcdon/progress50.tpdata
     ``````
+  - Run th visual evaluation
+    ``````
+    python descriptor_evaluation.py configs/mcdon.yaml -tps 50
+    ``````
 
