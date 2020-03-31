@@ -1248,7 +1248,7 @@ def draw_match_test_multi():
     sample_n_for_display = 5000
     os.putenv('DISPLAY', ':0')
     import yaml
-    with open('/home/chai/projects/visual_descriptor_learning/configs/1219_fpn_6d.yaml',
+    with open('YOUR_CONFIG.yaml',
               'r') as f:
         dd = yaml.load(f)
     pd = MultiDataset(dd['sampling'], dd['test_data'])
@@ -1321,7 +1321,7 @@ def multi_dataset_vis_test():
     disp_max = 500
     os.putenv('DISPLAY', ':0')
     import yaml
-    with open('/home/chai/projects/visual_descriptor_learning/exps_final/exp1/others/0216_exp1_ours_443_MH_nbk.yaml',
+    with open('YOUR_CONFIG.yaml',
               'r') as f:
         dd = yaml.load(f)
     pd = MultiDataset(dd['sampling'], dd['test_data'])
@@ -1455,17 +1455,3 @@ def indices1d_remap_new_uv(old_indices, old_shape, new_shape, shift=(0, 0)):  # 
 
 if __name__ == '__main__':
     multi_dataset_vis_test()
-    # disp_max = 5000
-    # os.putenv('DISPLAY', ':0')
-    # import yaml
-    #
-    # with open('/home/chai/projects/visual_descriptor_learning/exps_iros/others/0116_3c.yaml',
-    #           'r') as f:
-    #     dd = yaml.load(f)
-    # pd = MultiDataset(dd['sampling'], dd['test_data'])
-    # pd.transform = lambda x: x  # No normalization, for visualization
-    # pd.match_n = disp_max
-    # pd.background_n = 50000
-    # for i in range(1000):
-    #     print(i)
-    #     aa = pd[0]

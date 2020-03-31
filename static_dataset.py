@@ -451,7 +451,7 @@ def static_dataset_vis_test():
     disp_max = 5000
     os.putenv('DISPLAY', ':0')
     import yaml
-    with open('/home/chai/projects/visual_descriptor_learning/exps/temporary/0113_test_static.yaml',
+    with open('YOUR_CONFIG.yaml',
               'r') as f:
         dd = yaml.load(f)
     pd = StaticDataset(dd['sampling'], dd['test_data'])

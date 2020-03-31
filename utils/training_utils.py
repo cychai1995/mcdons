@@ -445,9 +445,3 @@ def weight_init(m):
             else:
                 init.normal_(param.data)
 
-
-if __name__ == '__main__':
-    a = TrainingProgress(
-        '/home/chai/projects/visual_descriptor_learning/progress/101701', 'progress', 20,
-        restore=True)
-    a.plot_epoch_data('train', 1, 20, 'aaa.png', 'Train Loss')
