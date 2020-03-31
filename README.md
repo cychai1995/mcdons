@@ -3,9 +3,23 @@
 
 ## Training Environment
 
-Our code has been tested on single GTX-1080Ti and RTX-2080Ti with pytorch version 1.1.0 and opencv-python 4.1.0.
+- Our code has been tested on **single** GTX-1080Ti / RTX-2080Ti with **CUDA 10.1** and
 
-Please manually install the [NVIDIA/apex package](https://github.com/NVIDIA/apex) for FP16 optimization.
+```
+torch==1.1.0
+opencv-python==4.10.0.*
+torchvision==0.2.2*
+```
+
+- [Install NVIDIA/apex package](https://github.com/NVIDIA/apex) for FP16 optimization.
+
+```bash
+git clone https://github.com/NVIDIA/apex
+git checkout 8818ba9
+python setup.py install --cuda_ext --cpp_ext
+```
+
+Please make sure the correct installation of pytorch(1.1.0) and apex, otherwise the memory usage may excess 11GB.
 
 ## Data Download
 
