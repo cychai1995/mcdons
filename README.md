@@ -2,8 +2,9 @@
 ### Code for our paper "Multi-step Pick-and-Place Tasks Using Object-centric Dense Correspondences" (IROS 2019)
 
 ## Training Environment
+- OS: Ubuntu 18.04 with Python Version=3.6
 
-- Our code has been tested on **single** GTX-1080Ti / RTX-2080Ti with **CUDA 10.1** and
+- Device and Packages: using **single** GTX-1080Ti / RTX-2080Ti with **CUDA 10.1** and
 
 ```
 torch==1.1.0
